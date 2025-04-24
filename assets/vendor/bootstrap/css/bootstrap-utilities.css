@@ -25,10 +25,10 @@
 }
 
 .link-success {
-  color: #198754;
+  color: #0a58ca;
 }
 .link-success:hover, .link-success:focus {
-  color: #146c43;
+  color: #0a58ca;
 }
 
 .link-info {
@@ -472,7 +472,7 @@
 }
 
 .border-success {
-  border-color: #198754 !important;
+  border-color: #0a58ca !important;
 }
 
 .border-info {
