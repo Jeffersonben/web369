@@ -55,7 +55,7 @@ h1, h2, h3, h4, h5, h6 {
 .back-to-top.active {
   visibility: visible;
   opacity: 1;
-  color:#3E8DE3;
+  
 }
 
 /*--------------------------------------------------------------
@@ -848,6 +848,26 @@ section {
     left: auto;
   }
 }
+
+@media (min-width:1200px){
+  #testimonial_name{
+    margin-top:-1px;
+    padding-top:2px;
+  }
+
+}
+
+@media (max-width:992px){
+  #testimonial_name{
+    margin-top:-1px;
+    padding-top:3px;
+  }
+  #testimonial_992{
+    margin-left:-40%;
+  }
+}
+
+
 
 /*--------------------------------------------------------------
 # Cource Details
