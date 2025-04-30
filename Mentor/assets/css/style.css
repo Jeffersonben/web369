@@ -926,6 +926,11 @@ section {
 }
 
 
+img.project_img_mob{
+    width: 100%; 
+    height: 80%; 
+}
+
 @media (max-width:992px){
   img.project_img_mob{
     width:100%;
@@ -933,6 +938,9 @@ section {
     display: block; /* removes inline gap below image */
     margin: 0 auto; /* centers the image horizontally */  }
 }
+
+
+
 /*--------------------------------------------------------------
 # project Details Tabs
 --------------------------------------------------------------*/
@@ -991,7 +999,7 @@ section {
 @media (max-width:992px){
 
   .mobile_head{
-    padding-left:15px;
+    padding-left:16px;
   }
 
   .mobile_para{
