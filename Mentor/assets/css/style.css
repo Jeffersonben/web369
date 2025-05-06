@@ -50,11 +50,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 .back-to-top:hover {
   background: #0a58ca;
-  color: #fff;
+  color: #0a58ca;
 }
 .back-to-top.active {
   visibility: visible;
   opacity: 1;
+  
 }
 
 /*--------------------------------------------------------------
@@ -353,7 +354,7 @@ h1, h2, h3, h4, h5, h6 {
 --------------------------------------------------------------*/
 #hero {
   width: 100%;
-  height: 80vh;
+  height: 84  vh;
   background: url("../img/hero-bg.jpg") top center;
   background-size: cover;
   position: relative;
@@ -372,11 +373,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media (max-width: 992px) {
   #hero .container {
-    padding-top: 62px;
+    padding-top: 100px;
   }
 }
 #hero h1 {
-  margin: 0;
+  margin-top: 20%;
   font-size: 48px;
   font-weight: 700;
   line-height: 56px;
@@ -410,25 +411,48 @@ h1, h2, h3, h4, h5, h6 {
     background-attachment: fixed;
   }
 }
-@media (max-width: 768px) {
+
+
+@media (max-width: 992px) {
+  
   #hero {
-    height: 100vh;
+    height: 30vh;
+    width:100%;
+    background: url("../img/hero-bg.jpg") top center;
+    background-size: cover;
+    position: relative;
+  }
+  #hero:before {
+    content: "";
+    background: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
   }
   #hero h1 {
-    font-size: 28px;
-    line-height: 36px;
+    margin:0;
+    margin-bottom:-5px;
+    padding-top:85px;
+    font-size: 19px;
+    line-height: 23px;
+
   }
   #hero h2 {
-    font-size: 18px;
-    line-height: 24px;
+    padding-bottom:45px;
+    font-size: 17px;
+    line-height: 17px;
   }
+
+  
 }
 
 /*--------------------------------------------------------------
 # Sections General
 --------------------------------------------------------------*/
 section {
-  padding: 60px 0;
+  padding: 30px 0;
   overflow: hidden;
 }
 
@@ -690,7 +714,7 @@ section {
   border-radius: 50px;
 }
 .courses .trainer .trainer-profile span {
-  padding-left: 10px;
+  padding-left: 0px;
   font-weight: 600;
   font-size: 16px;
   color: #5a6c60;
@@ -832,6 +856,26 @@ section {
   }
 }
 
+@media (min-width:1200px){
+  #testimonial_name{
+    margin-top:-1px;
+    padding-top:2px;
+  }
+
+}
+
+@media (max-width:992px){
+  #testimonial_name{
+    margin-top:-1px;
+    padding-top:3px;
+  }
+  #testimonial_992{
+    margin-left:-40%;
+  }
+}
+
+
+
 /*--------------------------------------------------------------
 # Cource Details
 --------------------------------------------------------------*/
@@ -858,7 +902,7 @@ section {
   display: block;
   width: 60px;
   height: 1px;
-  background: #3E8DE3;
+  background: #eef0ef;
   bottom: 0;
   left: 0;
 }
@@ -880,6 +924,22 @@ section {
 .course-details .course-info a {
   color: #657a6d;
 }
+
+
+img.project_img_mob{
+    width: 100%; 
+    height: 80%; 
+}
+
+@media (max-width:992px){
+  img.project_img_mob{
+    width:100%;
+    height:50%;
+    display: block; /* removes inline gap below image */
+    margin: 0 auto; /* centers the image horizontally */  }
+}
+
+
 
 /*--------------------------------------------------------------
 # project Details Tabs
@@ -924,6 +984,7 @@ section {
 .cource-details-tabs .details p:last-child {
   margin-bottom: 0;
 }
+
 @media (max-width: 992px) {
   .cource-details-tabs .nav-link {
     border: 0;
@@ -935,6 +996,22 @@ section {
   }
 }
 
+@media (max-width:992px){
+
+  .mobile_head{
+    padding-left:16px;
+  }
+
+  .mobile_para{
+    padding-left:16px;
+
+}
+  .course-info:nth-of-type(1){
+    margin-top:30px;
+  
+  }
+
+}
 /*--------------------------------------------------------------
 # Events
 --------------------------------------------------------------*/
@@ -963,9 +1040,10 @@ body{
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
   color: #fff;
-  font-size: 2rem;
+  font-size: 1.5rem;
   background-color: #3E8DE3;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
 }
 
 #timeline p{
@@ -1011,9 +1089,11 @@ body{
   margin-left: 5px;
 }
 
+
 .active:after {
   content: ""; /* Unicode character for "minus" sign (-) */
 }
+
 
 .collapsing_content {
   padding: 0 18px;
@@ -1030,6 +1110,51 @@ body{
 #timeline ul{
   padding: 0;
 }
+@media (max-width:992px){
+  .collapsing_btn {
+    background-color: #4CAF50;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    padding: 18px;
+    width: 40%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+  }
+
+  .collapsing_btn:after {
+    content: '\002B'; /* Unicode character for "plus" sign (+) */
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+
+
+}
+
+@media (max-width:992px){
+  #timeline button{
+    margin: 0.5rem 0rem 1rem 5.7rem;
+    outline: none;
+    border: 1px solid #139ee3;
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    background: transparent;
+    transition: all 0.3s ease-in;
+    font-family: inherit;
+    cursor: pointer;
+  }
+
+  #timeline button:hover{
+    background-color: #3E8DE3;
+    color: #ffffff;
+  }
+
+}
+
+
 
 /*for creation center line*/
 #timeline ul li{
@@ -1076,11 +1201,12 @@ body{
 #timeline .boxer:before{
   content: "";
   position: absolute;
-  top: 5px;
+  top: 5%;
   width: 0;
   right: 0;
   border-style: solid;
 }
+
 
 #timeline ul li:nth-child(odd) .boxer:before{
   left: -15px;
@@ -1094,24 +1220,67 @@ body{
   border-color:transparent #3E8DE3;
 }
 
-@media (max-width: 768px) {
+
+
+
+@media screen and (max-width: 992px){
+  
+  #timeline ul{
+    padding: 0;
+  }
+
+  #timeline .boxer:before{
+      content: "";
+      position: absolute;
+      top: 5%;
+      width: 0;
+      right: 0;
+      border-style: solid;
+    }
+
   #timeline ul li{
-    margin-left: 30px;
-  }
-
+      margin-left: 30px;
+    }
+    
   #timeline ul li .boxer{
-    width: calc(100vw -90vw);
+    position: relative;
+    bottom: 0;
+    width: 310px;
+    background-color: floralwhite;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
   }
 
-  /*left side*/
+  #timeline ul li:nth-child(odd) .boxer{
+    left: 40px;
+  }
+
+  #timeline ul li:nth-child(odd) .boxer:before{
+    left: -10px;
+    border-width: 8px 16px 6px 0;
+    border-color:transparent #3E8DE3;
+  }
+
   #timeline ul li:nth-child(even) .boxer{
-    left:40px;
+    left: 40px;
   }
 
   #timeline ul li:nth-child(even) .boxer:before{
-    left: -15px;
-    border-width: 8px 16px 8px 0;
+    left: -10px;
+    border-width: 8px 16px 6px 0;
     border-color:transparent #3E8DE3;
+  }
+  
+  .inner_title{
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.5);
+    padding: 1rem 1rem 1rem 0.7rem;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    color: #fff;
+    font-size: 1.5rem;
+    background-color: #3E8DE3;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
   }
 }
 /*--------------------------------------------------------------
