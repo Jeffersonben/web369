@@ -1070,7 +1070,7 @@ body{
 }
 
 .collapsing_btn {
-  background-color: #4CAF50;
+  background-color: #3E8DE3;
   color: rgb(0, 0, 0);
   cursor: pointer;
   padding: 18px;
@@ -1091,7 +1091,7 @@ body{
 
 
 .active:after {
-  content: ""; /* Unicode character for "minus" sign (-) */
+  content: "\002B"; /* Unicode character for "minus" sign (-) */
 }
 
 
@@ -1112,7 +1112,7 @@ body{
 }
 @media (max-width:992px){
   .collapsing_btn {
-    background-color: #4CAF50;
+    background-color: #3E8DE3;
     color: rgb(0, 0, 0);
     cursor: pointer;
     padding: 18px;
@@ -1281,6 +1281,70 @@ body{
     background-color: #3E8DE3;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
+  }
+}
+/*responsiveness added for boxer */
+@media screen and (max-width: 750px){
+  #timeline ul{
+    padding: 0;
+  }
+
+  #timeline .boxer:before{
+      content: "";
+      position: absolute;
+      top: 5%;
+      width: 0;
+      right: 0;
+      border-style: solid;
+    }
+
+  #timeline ul li{
+      margin-left: 30px;
+    }
+    
+  #timeline ul li .boxer{
+    position: relative;
+    bottom: 0;
+    width: 280px;
+    background-color: floralwhite;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+  }
+
+  #timeline ul li:nth-child(odd) .boxer{
+    left: 40px;
+  }
+
+  #timeline ul li:nth-child(odd) .boxer:before{
+    left: -10px;
+    border-width: 8px 16px 6px 0;
+    border-color:transparent #3E8DE3;
+  }
+
+  #timeline ul li:nth-child(even) .boxer{
+    left: 40px;
+  }
+
+  #timeline ul li:nth-child(even) .boxer:before{
+    left: -10px;
+    border-width: 8px 16px 6px 0;
+    border-color:transparent #3E8DE3;
+  }
+  
+  .inner_title{
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.5);
+    padding: 1rem 1rem 1rem 0.7rem;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    color: #fff;
+    font-size: 1.5rem;
+    background-color: #3E8DE3;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+  }
+
+  button.collapsing_btn::after {
+    display: none !important;
   }
 }
 /*--------------------------------------------------------------
